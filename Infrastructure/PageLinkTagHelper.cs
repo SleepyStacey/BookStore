@@ -34,11 +34,12 @@ namespace BookStore.Infrastructure
 
             TagBuilder result = new TagBuilder("div");
 
+            //for loop
             for (int i =1; i <= PageModel.TotalPages; i++)
             {
                 TagBuilder tag = new TagBuilder("a");
 
-                tag.Attributes["href"] = urlHelper.Action(PageAction, new { page = 1 });
+                tag.Attributes["href"] = urlHelper.Action(PageAction, new { page = i });
                 tag.InnerHtml.Append(i.ToString());
 
                 result.InnerHtml.AppendHtml(tag);
