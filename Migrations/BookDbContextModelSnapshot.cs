@@ -35,6 +35,11 @@ namespace BookStore.Migrations
 
                     b.Property<string>("ISBN")
                         .IsRequired()
+                        .HasColumnType("nvarchar(14)")
+                        .HasMaxLength(14);
+
+                    b.Property<string>("PageNumber")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Price")

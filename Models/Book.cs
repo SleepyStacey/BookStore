@@ -16,6 +16,9 @@ namespace BookStore.Models
         public string Author { get; set; }
         [Required]
         public string Publisher { get; set; }
+        [Required]
+        //add the page numbers 
+        public string PageNumber { get; set; }
 
 
         [Required(ErrorMessage = "Please enter the valid ISBN in this format: xxx-xxxxxxxxxxx (13 digits with one symbol)")]
@@ -26,6 +29,8 @@ namespace BookStore.Models
         public string Category { get; set; }
         [Required]
         public string Price { get; set; }
+        
+        
         
     }
 }

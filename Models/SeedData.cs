@@ -31,7 +31,8 @@ namespace BookStore.Models
                         Publisher = "Signet",
                         ISBN = "978-0451419439",
                         Category = "Fiction, Classic",
-                        Price = "$9.95"
+                        Price = "$9.95",
+                        PageNumber = "1488"
                     },
 
                      new Book
@@ -41,7 +42,8 @@ namespace BookStore.Models
                          Publisher = "Simon & Schuster",
                          ISBN = "978-0743270755",
                          Category = "Non-Fiction, Biography",
-                         Price = "$14.58"
+                         Price = "$14.58",
+                         PageNumber = "944"
                      },
 
                       new Book
@@ -51,7 +53,8 @@ namespace BookStore.Models
                           Publisher = "Bantam",
                           ISBN = "978-0553384611",
                           Category = "Non-Fiction, Biography",
-                          Price = "$21.54"
+                          Price = "$21.54",
+                          PageNumber = "832"
                       },
 
                        new Book
@@ -61,7 +64,8 @@ namespace BookStore.Models
                            Publisher = "Random House",
                            ISBN = "978-0812981254",
                            Category = "Non-Fiction, Biography",
-                           Price = "$11.61"
+                           Price = "$11.61",
+                           PageNumber = "864"
                        },
 
                         new Book
@@ -71,7 +75,8 @@ namespace BookStore.Models
                             Publisher = "Random House",
                             ISBN = "978-0812974492",
                             Category = "Non-Fiction, Historical",
-                            Price = "$13.33"
+                            Price = "$13.33",
+                            PageNumber = "528"
                         },
 
                          new Book
@@ -81,7 +86,8 @@ namespace BookStore.Models
                              Publisher = "Vintage",
                              ISBN = "978-0804171281",
                              Category = "Fiction, Historical Fiction",
-                             Price = "$15.95"
+                             Price = "$15.95",
+                             PageNumber = "288"
                          },
 
                           new Book
@@ -91,7 +97,8 @@ namespace BookStore.Models
                               Publisher = "Grand Central Publishing ",
                               ISBN = "978-1455586691",
                               Category = "Non-Fiction, Self-Help",
-                              Price = "$14.99"
+                              Price = "$14.99",
+                              PageNumber = "304"
                           },
 
                            new Book
@@ -101,7 +108,8 @@ namespace BookStore.Models
                                Publisher = "Grand Central Publishing ",
                                ISBN = "978-1455523023",
                                Category = "Non-Fiction, Self-Help",
-                               Price = "$21.66"
+                               Price = "$21.66",
+                               PageNumber = "240"
                            },
 
                             new Book
@@ -111,7 +119,8 @@ namespace BookStore.Models
                                 Publisher = "Portfolio",
                                 ISBN = "978-1591847984",
                                 Category = "Non-Fiction, Business",
-                                Price = "$29.16"
+                                Price = "$29.16",
+                                PageNumber = "400"
                             },
 
                              new Book
@@ -122,8 +131,42 @@ namespace BookStore.Models
                                  Publisher = "Bantam",
                                  ISBN = "978-0553393613",
                                  Category = "Fiction, Thrillers",
-                                 Price = "$15.03"
-                             }
+                                 Price = "$15.03",
+                                 PageNumber = "642"
+                             },
+
+                               new Book
+                               {
+                                   Title = "To Kill a Mockingbird",
+                                   Author = "Harper Lee",
+                                   Publisher = "Cornerstone Digital",
+                                   ISBN = "978-0060888695",
+                                   Category = "Southern Gothic fiction",
+                                   Price = "$15.99",
+                                   PageNumber = "322"
+                               },
+
+                               new Book
+                               {
+                                   Title = "The Lord of the Rings",
+                                   Author = "J.R.R. Tolkien",
+                                   Publisher = "Allen & Unwin",
+                                   ISBN = "978-0563528883",
+                                   Category = "Heroic Romance",
+                                   Price = "$16.99",
+                                   PageNumber = "1216"
+                               },
+
+                               new Book
+                               {
+                                   Title = "The Chronicles of Narnia",
+                                   Author = "C. S. Lewis",
+                                   Publisher = "HarperCollins ",
+                                   ISBN = "978-0066238500",
+                                   Category = "Fantasy Literature",
+                                   Price = "$9.13",
+                                   PageNumber = "768"
+                               }
                     ) ;
 
                 context.SaveChanges();

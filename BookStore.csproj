@@ -22,7 +22,7 @@
 	  </PackageReference>
 	</ItemGroup>
 
-	<ProjectExtensions><VisualStudio><UserProperties package_1json__JsonSchema="http://json-schema.org/package" /></VisualStudio></ProjectExtensions>
+	<ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
 
 </Project>
  

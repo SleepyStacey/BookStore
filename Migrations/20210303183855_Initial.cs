@@ -15,7 +15,8 @@ namespace BookStore.Migrations
                     Title = table.Column<string>(nullable: false),
                     Author = table.Column<string>(nullable: false),
                     Publisher = table.Column<string>(nullable: false),
-                    ISBN = table.Column<string>(nullable: false),
+                    PageNumber = table.Column<string>(nullable: false),
+                    ISBN = table.Column<string>(maxLength: 14, nullable: false),
                     Category = table.Column<string>(nullable: false),
                     Price = table.Column<string>(nullable: false)
                 },
