@@ -18,11 +18,29 @@ h1 {
 
 #container p {
     text-indent: 180px;
-    border: 2px solid black;
-    outline: olive solid 10px;
+    border: 1px solid black;
+    outline: grey solid 1px;
     margin: auto;
     padding: 20px;
 }
+
+.btn{
+    padding: 10px;
+}
+
+.btn-group pull-right m-1{
+    padding: 10px;
+}
+
+.btn:hover {
+    color: darkred;
+}
+
+.btn-group pull-right m-1:hover{
+    color:darkred;
+}
+
+
 
 
 
