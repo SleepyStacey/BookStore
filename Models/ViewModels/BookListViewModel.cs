@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 
 namespace BookStore.Models.ViewModels
 {
-    public class BookListNewModel
+    public class BookListViewModel
     {
         public IEnumerable<Book> Books { get; set; }
         public PagingInfo PagingInfo { get; set; }
+        public string CurrentCategory { get; set; }
+
 
     }
 }

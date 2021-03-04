@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-@model BookListNewModel
+@model BookListViewModel
 
 
 <header>
@@ -13,15 +13,7 @@
 
 @foreach (var x in Model.Books)
 {
-    <div id="container">
-        <h4>Book Title: @x.Title</h4>
-        <p>Author: @x.Author</p>
-        <p>Publisher: @x.Publisher</p>
-        <p>ISBN: @x.ISBN</p>
-        <p>Category: @x.Category</p>
-        <p>Price: @x.Price</p>
-        <p>Number of Pages: @x.PageNumber</p>
-    </div>
+    <partial name="ProjectSummary" model="x" />
 }
 
 <div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn"
