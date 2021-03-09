@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using BookStore.Models;
+using BookStore.Models.ViewModels;
 
 namespace BookStore.Controllers
 {
@@ -15,15 +16,36 @@ namespace BookStore.Controllers
 
         private IBookRepository _repository;
 
+        public int  PageSize = 5;
+
         public HomeController(ILogger<HomeController> logger, IBookRepository repository)
         {
             _logger = logger;
             _repository = repository;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string category, int page = 1)
         {
-            return View(_repository.Books);
+            return View(new BookListViewModel
+            {
+                Books = _repository.Books
+                .Where(b => category == null || b.Category == category)
+                .OrderBy(b => b.BookId)
+                .Skip((page - 1) * PageSize)
+                .Take(PageSize)
+                ,
+
+                PagingInfo = new PagingInfo
+                {
+                    CurrentPage = page,
+                    ItemsPerPage = PageSize,
+                    TotalNumItems = category == null ?_repository.Books.Count():
+                    _repository.Books.Where(x=>x.Category == category).Count()
+                },
+
+                 Category = category
+            }) ;
+
         }
 
         public IActionResult Privacy()

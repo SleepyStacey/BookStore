@@ -1,18 +1,45 @@
 ﻿body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:antiquewhite;
 }
 
 h1 {
-    text-align:center;
-    color:darkred
+    text-align: center;
+    color: darkred;
+    border: 3px solid Darkred;
+    
 }
 
-#container h4{
-    text-indent:180px;
-    color:olive;
+#container h4 {
+    text-indent: 180px;
+    color: olive;
+    outline: grey solid 1px;
 }
 
 #container p {
-    text-indent:180px;
+    text-indent: 180px;
+    text-decoration: underline;
+    margin: auto;
+    padding: 30px;
 }
+
+.btn{
+    padding: 10px;
+}
+
+.btn-group pull-right m-1{
+    padding: 10px;
+}
+
+.btn:hover {
+    color: darkred;
+}
+
+.btn-group pull-right m-1:hover{
+    color:darkred;
+}
+
+
+
+
 
